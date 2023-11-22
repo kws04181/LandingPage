@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>투자리딩</title>
+    <!-- css 파일 -->
+    <link rel="stylesheet" href="index.css" />
+    <!-- js 파일 -->
+    <script src="script.js"></script>
+    <!-- AOS 라이브러리 불러오기-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+  <body>
+    <div class="landingPage">
+      <img src="img/leading.jpg" alt="투자리딩" />
+      <img src="img/leading2.jpg" alt="투자리딩2" />
+      <img src="img/leading3.jpg" alt="투자리딩3" />
+      <img src="img/leading4.jpg" alt="투자리딩4" />
+      <img src="img/leading5.jpg" alt="투자리딩5" />
+    </div>
+    <!-- 푸터 -->
+    <div class="footer">
+      <div class="textWrapper">
+        <div class="textCon">
+          <p><b>주식회사</b> 피버코퍼레이션</p>
+          <p><b>대표 사업자등록번호</b> 489-87-01881</p>
+        </div>
+        <div class="textCon">
+          <p><b>대표이사</b> 박상훈</p>
+          <p><b>tel</b> 02-2629-6788</p>
+        </div>
+      </div>
+    </div>
+    <!-- 플로팅 배너-->
+    <div class="floating-banner">
+      <div class="banner-content">
+        <!-- data-aos="fade-up"
+        data-aos-offset="1000"
+        data-aos-delay="50"
+        data-aos-duration="300"
+        data-aos-easing="ease-in-out" -->
+        <img
+          class="banner-image"
+          src="img/kakao.png"
+          alt="카카오톡 상담바로가기"
+          onclick="navigateTo('카카오톡')"
+        />
+        <img
+          class="banner-image"
+          src="img/number.png"
+          alt="통화상담 바로가기"
+          onclick="document.location.href='tel:02-2629-6788'"
+        />
+        <img
+          class="banner-image"
+          src="img/top.png"
+          alt="탑으로 이동버튼"
+          onclick="scrollToTop()"
+        />
+      </div>
+    </div>
+    <!-- <script>
+      AOS.init();
+    </script> -->
+  </body>
+</html>

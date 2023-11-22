@@ -1,0 +1,1360 @@
+@import url(//fonts.googleapis.com/earlyaccess/nanumpenscript.css);
+
+.nanumpenscript * {
+  font-family: "Nanum Pen Script", cursive;
+}
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Pretendard";
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  /* max-width: 1920px; */
+  margin: 0 auto;
+  position: relative;
+}
+a {
+  text-decoration: none;
+}
+/* 랜딩페이지 영역 */
+.landingPage {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  position: relative;
+}
+.landingPage .dropShadow {
+  filter: drop-shadow(0 10px 5px);
+  z-index: 2;
+}
+/* 스와이핑 영역 */
+.swiper {
+  height: 68vh;
+}
+.swiper img {
+  width: 100%;
+  height: 100%;
+}
+
+/* 서브배너 영역 */
+.subBanner {
+  width: 100%;
+  margin: 0 auto;
+  height: 28vh;
+  background: black;
+}
+
+.bannerInner {
+  max-width: 1920px;
+  margin: 0 auto;
+  height: 100%;
+  padding: 0 200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.textArea {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  height: 100%;
+  gap: 15px;
+}
+
+.textArea h2 {
+  font-size: 44px;
+  font-weight: 500;
+  color: #727272;
+}
+.textArea h1 {
+  font-size: 77px;
+  font-weight: 900;
+  color: #fff;
+}
+
+.btnArea {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.btn {
+  width: 346px;
+  height: 90px;
+  border-radius: 100px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+}
+
+.btn h3 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.icon img {
+  width: 45px;
+}
+.arrow img {
+  width: 26px;
+}
+
+.counselingBanner {
+  display: flex;
+  flex-flow: column;
+  position: relative;
+  /* background: url(img/bg.png) no-repeat center;
+  height: 100%;
+  text-align: center; */
+}
+
+.bannerTxt {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  padding: 6% 0;
+  flex-flow: column;
+  align-items: center;
+  height: 100%;
+  justify-content: space-between;
+  width: 100%;
+}
+.counselingBanner h1 {
+  font-size: 70px;
+  text-align: center;
+}
+.formContainer {
+  display: flex;
+  flex-flow: column;
+  gap: 20px;
+  width: 58%;
+}
+.formContainer .formTxt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.formContainer .formTxt h3 {
+  font-size: 36px;
+  font-weight: 400;
+}
+.formContainer .formTxt h3::after {
+  content: "*";
+  position: relative;
+  top: 1%;
+  left: 5%;
+  color: #1e5050;
+}
+
+.formContainer .formTxt:last-child h3::after {
+  content: "";
+  position: relative;
+  top: 1%;
+  left: 5%;
+  color: #1e5050;
+}
+.formContainer .formTxt input {
+  width: 960px;
+  height: 110px;
+  padding: 30px 50px;
+  border-radius: 20px;
+  border: 1px solid #aeaeae;
+  font-size: 36px;
+  font-weight: 300;
+}
+.formContainer .formTxt input::placeholder {
+  font-size: 36px;
+  color: #aeaeae;
+  font-weight: 300;
+}
+.formContainer .formTxt input[type="number"]::-webkit-outer-spin-button,
+.formContainer .formTxt input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.checkContainer {
+  display: flex;
+  gap: 50px;
+  width: 56%;
+  justify-content: flex-end;
+}
+.checkTxt {
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.checkTxt img {
+  cursor: pointer;
+}
+.checkTxt .checkWrap {
+  display: flex;
+  gap: 20px;
+}
+.checkTxt input {
+  width: 25px;
+  height: 25px;
+}
+.checkTxt h3 {
+  font-size: 28px;
+  font-weight: 400;
+}
+.checkTxt span {
+  color: #646464;
+  cursor: pointer;
+}
+.bannerTxt .btn {
+  width: 640px;
+  height: 123px;
+  border-radius: 110px;
+  text-align: center;
+  font-weight: 900;
+  color: white;
+}
+.bannerTxt .btn h3 {
+  font-size: 50px;
+}
+
+.banner-content {
+  display: flex;
+  flex-flow: column;
+  position: fixed;
+  bottom: 15%;
+  right: 2%;
+  gap: 10px;
+  align-items: center;
+}
+.banner-content img {
+  width: 100%;
+  cursor: pointer;
+}
+.banner-content img:last-child {
+  width: 49%;
+}
+.popup-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-content {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  width: 70%;
+  height: 80%;
+  max-width: 90%;
+  max-height: 90%;
+  overflow-y: auto;
+}
+.popup-content h2 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+.popup-content textarea {
+  width: 90%;
+  height: 80%;
+  border: 1px solid #aeaeae;
+  display: flex;
+  margin: 20px auto;
+  padding: 20px;
+  font-size: 1.2rem;
+}
+
+.popup-close {
+  display: block;
+  margin-top: 15px;
+  text-align: center;
+}
+.btnBox {
+  display: flex;
+  justify-content: center;
+}
+.btnBox button {
+  background: #ff6d08;
+  width: 190px;
+  height: 70px;
+  border: none;
+  border-radius: 40px;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+.footer {
+  width: 100%;
+  height: 12vh;
+  background: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 300;
+}
+.textWrapper {
+  display: flex;
+  gap: 140px;
+}
+.textCon {
+  display: flex;
+  flex-flow: column;
+  gap: 20px;
+}
+b{
+  margin-right: 10px;
+}
+@media (max-width: 400px) {
+  .swiper {
+    height: 26vh;
+  }
+  .landingPage .dropShadow {
+    filter: drop-shadow(0 3px 8px);
+    z-index: 2;
+  }
+  .subBanner {
+    height: 10vh;
+  }
+  .textArea {
+    gap: 8px;
+  }
+  .textArea h2 {
+    font-size: 12px;
+  }
+  .textArea h1 {
+    font-size: 22px;
+  }
+  .bannerInner {
+    padding: 0 40px;
+  }
+  .btnArea {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+  .btn {
+    width: 100px;
+    height: 20px;
+    gap: 5px;
+  }
+  .icon img {
+    width: 14px;
+  }
+  .arrow img {
+    width: 8px;
+  }
+  .btn h3 {
+    font-size: 10px;
+    font-weight: bold;
+  }
+  .counselingBanner h1 {
+    font-size: 13px;
+  }
+  .formContainer {
+    gap: 5px;
+  }
+  .formContainer .formTxt h3 {
+    font-size: 6px;
+  }
+  .formContainer .formTxt input {
+    width: 180px;
+    height: 25px;
+    font-size: 6px;
+    padding: 5px 10px;
+    border-radius: 4px;
+  }
+  .formContainer .formTxt input::placeholder {
+    font-size: 6px;
+  }
+  .checkContainer {
+    flex-flow: column;
+    gap: 5px;
+  }
+  .checkTxt {
+    font-size: 10px;
+    gap: 6px;
+    justify-content: center;
+  }
+  .checkTxt h3 {
+    font-size: 10px;
+  }
+  .checkTxt img {
+    width: 10px;
+  }
+  .checkTxt .checkWrap {
+    gap: 6px;
+  }
+  .bannerTxt {
+    padding: 3% 0;
+  }
+  .bannerTxt .btn {
+    width: 120px;
+    height: 30px;
+  }
+  .bannerTxt .btn h3 {
+    font-size: 14px;
+  }
+  .banner-content {
+    bottom: 6%;
+    right: -10%;
+    gap: 4px;
+  }
+  .banner-content img {
+    width: 30%;
+  }
+  .banner-content img:last-child {
+    width: 15%;
+  }
+  .popup-content {
+    padding: 5px;
+  }
+  .popup-content h2 {
+    font-size: 1rem;
+  }
+  .popup-content textarea {
+    font-size: 10px;
+    margin: 7px auto;
+    padding: 3px;
+    height: 60%;
+  }
+  .btnBox button {
+    width: 80px;
+    height: 30px;
+    font-size: 8px;
+  }
+  .footer {
+    height: 6vh;
+    font-size: 10px;
+  }
+  .textWrapper {
+    gap: 20px;
+    padding: 5px 0;
+  }
+  .textCon {
+    gap: 5px;
+  }
+}
+/* 모바일 스타일 381~550px */
+@media (min-width: 401px) and (max-width: 550px) {
+  .swiper {
+    height: 40vh;
+  }
+  .subBanner {
+    height: 15vh;
+  }
+  .bannerInner {
+    padding: 0 55px;
+  }
+  .textArea {
+    gap: 10px;
+  }
+  .textArea h2 {
+    font-size: 16px;
+  }
+  .textArea h1 {
+    font-size: 26px;
+  }
+  .btnArea {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+  .btn {
+    width: 160px;
+    height: 35px;
+    gap: 8px;
+  }
+
+  .icon img {
+    width: 18px;
+  }
+  .arrow img {
+    width: 12px;
+  }
+  .btn h3 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .counselingBanner h1 {
+    font-size: 18px;
+  }
+  .formContainer {
+    gap: 6px;
+  }
+  .formContainer .formTxt h3 {
+    font-size: 12px;
+  }
+  .formContainer .formTxt input {
+    width: 270px;
+    height: 40px;
+    font-size: 12px;
+    padding: 5px 15px;
+    border-radius: 8px;
+  }
+  .formContainer .formTxt input::placeholder {
+    font-size: 12px;
+  }
+  .checkContainer {
+    flex-flow: column;
+    gap: 5px;
+  }
+  .checkTxt {
+    font-size: 11px;
+    gap: 6px;
+    justify-content: center;
+  }
+  .checkTxt h3 {
+    font-size: 11px;
+  }
+  .checkTxt img {
+    width: 12px;
+  }
+  .checkTxt .checkWrap {
+    gap: 6px;
+  }
+  .bannerTxt {
+    padding: 3% 0;
+  }
+  .bannerTxt .btn {
+    width: 170px;
+    height: 40px;
+  }
+  .bannerTxt .btn h3 {
+    font-size: 16px;
+  }
+  .banner-content {
+    bottom: 10%;
+    right: -6%;
+    gap: 6px;
+  }
+  .banner-content img {
+    width: 40%;
+  }
+  .banner-content img:last-child {
+    width: 20%;
+  }
+  .popup-content {
+    padding: 5px;
+  }
+  .popup-content h2 {
+    font-size: 1rem;
+  }
+  .popup-content textarea {
+    font-size: 10px;
+    margin: 7px auto;
+    padding: 3px;
+    height: 70%;
+  }
+  .btnBox button {
+    width: 80px;
+    height: 30px;
+    font-size: 12px;
+  }
+  .footer {
+    height: 5vh;
+    font-size: 10px;
+  }
+  .textWrapper {
+    gap: 20px;
+  }
+  .textCon {
+    display: flex;
+    flex-flow: column;
+    gap: 5px;
+  }
+  .footer {
+    height: 6vh;
+    font-size: 10px;
+  }
+  .textWrapper {
+    gap: 20px;
+  }
+  .textCon {
+    gap: 8px;
+  }
+}
+/* 모바일 스타일 */
+@media (min-width: 551px) and (max-width: 768px) {
+  .swiper {
+    height: 60vh;
+  }
+  .subBanner {
+    height: 20vh;
+  }
+  .bannerInner {
+    padding: 0 60px;
+  }
+
+  .textArea h2 {
+    font-size: 20px;
+  }
+  .textArea h1 {
+    font-size: 36px;
+  }
+  .btnArea {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+  .btn {
+    width: 210px;
+    height: 50px;
+    gap: 10px;
+  }
+
+  .icon img {
+    width: 25px;
+  }
+  .arrow img {
+    width: 14px;
+  }
+  .btn h3 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .counselingBanner h1 {
+    font-size: 26px;
+  }
+  .formContainer {
+    gap: 7px;
+  }
+  .formContainer .formTxt h3 {
+    font-size: 16px;
+  }
+  .formContainer .formTxt input {
+    width: 365px;
+    height: 50px;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+  .formContainer .formTxt input::placeholder {
+    font-size: 16px;
+  }
+  .checkContainer {
+    gap: 10px;
+    width: 60%;
+  }
+  .checkTxt {
+    font-size: 12px;
+    gap: 6px;
+  }
+  .checkTxt h3 {
+    font-size: 12px;
+  }
+  .checkTxt img {
+    width: 16px;
+  }
+  .checkTxt .checkWrap {
+    gap: 6px;
+  }
+  .bannerTxt .btn {
+    width: 250px;
+    height: 50px;
+  }
+  .bannerTxt .btn h3 {
+    font-size: 20px;
+  }
+  .banner-content {
+    bottom: 14%;
+    right: -1%;
+    gap: 8px;
+  }
+  .banner-content img {
+    width: 50%;
+  }
+  .banner-content img:last-child {
+    width: 25%;
+  }
+  .popup-content {
+    padding: 5px;
+  }
+  .popup-content h2 {
+    font-size: 1rem;
+  }
+  .popup-content textarea {
+    font-size: 10px;
+    margin: 7px auto;
+    padding: 3px;
+  }
+  .btnBox button {
+    width: 80px;
+    height: 30px;
+    font-size: 12px;
+  }
+  .footer {
+    height: 8vh;
+    font-size: 12px;
+  }
+  .textWrapper {
+    gap: 50px;
+  }
+  .textCon {
+    gap: 16px;
+  }
+}
+
+/* 태블릿 스타일 */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .swiper {
+    height: 70vh;
+  }
+  .subBanner {
+    height: 26vh;
+  }
+  .textArea h2 {
+    font-size: 26px;
+  }
+  .textArea h1 {
+    font-size: 46px;
+  }
+  .bannerInner {
+    padding: 0 110px;
+  }
+  .btnArea {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+  .btn {
+    width: 255px;
+    height: 70px;
+  }
+  .btn h3 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .counselingBanner h1 {
+    font-size: 36px;
+  }
+  .formContainer {
+    width: 54%;
+  }
+  .bannerTxt {
+    padding: 5% 0;
+  }
+  .formContainer .formTxt h3 {
+    font-size: 20px;
+  }
+  .formContainer .formTxt input {
+    width: 474px;
+    height: 37px;
+    padding: 25px 25px;
+    border-radius: 10px;
+    font-size: 20px;
+  }
+  .formContainer .formTxt input::placeholder {
+    font-size: 20px;
+  }
+  .checkContainer {
+    display: flex;
+    gap: 25px;
+    width: 55%;
+    justify-content: flex-end;
+  }
+  .checkTxt {
+    font-size: 15px;
+    gap: 8px;
+  }
+  .checkTxt h3 {
+    font-size: 15px;
+    gap: 14px;
+  }
+  .checkTxt img {
+    width: 18px;
+  }
+  .checkTxt .checkWrap {
+    gap: 8px;
+  }
+  .bannerTxt .btn {
+    width: 350px;
+    height: 75px;
+    border-radius: 35px;
+  }
+  .bannerTxt .btn h3 {
+    font-size: 24px;
+  }
+  .banner-content {
+    bottom: 17%;
+    right: 2%;
+    gap: 8px;
+  }
+  .banner-content img {
+    width: 60%;
+  }
+  .banner-content img:last-child {
+    width: 30%;
+  }
+  .popup-content {
+    padding: 10px;
+  }
+  .popup-content h2 {
+    font-size: 1.2rem;
+  }
+  .popup-content textarea {
+    font-size: 13px;
+    margin: 10px auto;
+    padding: 10px;
+  }
+  .btnBox button {
+    width: 100px;
+    height: 35px;
+    font-size: 16px;
+  }
+  .footer {
+    height: 10vh;
+    font-size: 14px;
+  }
+  .textWrapper {
+    gap: 50px;
+  }
+  .textCon {
+    gap: 16px;
+  }
+}
+
+/* 데스크탑 스타일 */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .swiper {
+    height: 90vh;
+  }
+  .subBanner {
+    height: 20vh;
+  }
+  .textArea {
+    gap: 10px;
+  }
+  .textArea h2 {
+    font-size: 32px;
+  }
+  .textArea h1 {
+    font-size: 55px;
+  }
+  .bannerInner {
+    padding: 0 80px;
+  }
+  .btnArea {
+    gap: 20px;
+    padding: 0;
+  }
+  .btn {
+    width: 255px;
+    height: 70px;
+    gap: 10px;
+  }
+  .icon img {
+    width: 30px;
+  }
+  .arrow img {
+    width: 18px;
+  }
+  .btn h3 {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .bannerTxt {
+    padding: 5% 0;
+  }
+  .counselingBanner h1 {
+    font-size: 44px;
+  }
+  .formContainer {
+    width: 60%;
+  }
+  .formContainer .formTxt h3 {
+    font-size: 26px;
+  }
+  .formContainer .formTxt input {
+    width: 650px;
+    height: 70px;
+    padding: 0 30px;
+  }
+  .formContainer .formTxt input::placeholder {
+    font-size: 26px;
+  }
+  .checkContainer {
+    display: flex;
+    gap: 50px;
+    width: 50%;
+    justify-content: flex-end;
+  }
+  .checkTxt {
+    font-size: 20px;
+    gap: 10px;
+  }
+  .checkTxt h3 {
+    font-size: 20px;
+  }
+  .checkContainer {
+    gap: 20px;
+    width: 56%;
+  }
+  .checkTxt img {
+    width: 23px;
+  }
+  .checkTxt .checkWrap {
+    gap: 8px;
+  }
+  .bannerTxt .btn {
+    width: 440px;
+    height: 89px;
+  }
+  .bannerTxt .btn h3 {
+    font-size: 32px;
+  }
+  .banner-content {
+    bottom: 20%;
+    right: 2%;
+    gap: 8px;
+  }
+  .banner-content img {
+    width: 70%;
+  }
+  .banner-content img:last-child {
+    width: 35%;
+  }
+  .popup-content {
+    padding: 15px;
+  }
+  .popup-content h2 {
+    font-size: 1.5rem;
+  }
+  .popup-content textarea {
+    font-size: 13px;
+    margin: 15px auto;
+    padding: 15px;
+  }
+  .btnBox button {
+    width: 140px;
+    height: 45px;
+    font-size: 22px;
+  }
+  .footer {
+    height: 14vh;
+    font-size: 20px;
+  }
+  .textWrapper {
+    gap: 120px;
+  }
+  .textCon {
+    gap: 22px;
+  }
+}
+/* 데스크탑 스타일2 */
+@media (min-width: 1281px) {
+  .swiper {
+    height: 90vh;
+  }
+  .subBanner {
+    height: 24vh;
+  }
+  .textArea h2 {
+    font-size: 38px;
+  }
+  .textArea h1 {
+    font-size: 66px;
+  }
+  .bannerInner {
+    padding: 0 90px;
+  }
+  .btnArea {
+    display: flex;
+    gap: 20px;
+  }
+  .btn {
+    width: 255px;
+    height: 70px;
+    gap: 10px;
+  }
+  .icon img {
+    width: 30px;
+  }
+  .arrow img {
+    width: 18px;
+  }
+  .btn h3 {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .counselingBanner h1 {
+    font-size: 52px;
+  }
+  .formContainer {
+    width: 60%;
+  }
+  .formContainer .formTxt h3 {
+    font-size: 28px;
+  }
+  .formContainer .formTxt input {
+    width: 720px;
+    height: 80px;
+    padding: 0 30px;
+  }
+  .formContainer .formTxt input::placeholder {
+    font-size: 28px;
+  }
+  .checkContainer {
+    display: flex;
+    gap: 50px;
+    width: 50%;
+    justify-content: flex-end;
+  }
+  .checkTxt {
+    font-size: 22px;
+    gap: 12px;
+  }
+  .checkTxt h3 {
+    font-size: 22px;
+  }
+  .checkContainer {
+    gap: 18px;
+    width: 57%;
+  }
+  .checkTxt img {
+    width: 24px;
+  }
+  .checkTxt .checkWrap {
+    gap: 10px;
+  }
+  .bannerTxt {
+    padding: 5% 0;
+  }
+  .bannerTxt .btn {
+    width: 480px;
+    height: 85px;
+  }
+  .bannerTxt .btn h3 {
+    font-size: 36px;
+  }
+  .banner-content {
+    bottom: 25%;
+    right: 3%;
+    gap: 10px;
+  }
+  .banner-content img {
+    width: 80%;
+  }
+  .banner-content img:last-child {
+    width: 40%;
+  }
+}
+@media (min-width: 1441px) {
+  body {
+    max-width: 1440px;
+  }
+  .swiper {
+    height: 100%;
+  }
+  .subBanner {
+    height: 24vh;
+  }
+  .textArea h2 {
+    font-size: 38px;
+  }
+  .textArea h1 {
+    font-size: 66px;
+  }
+  .bannerInner {
+    padding: 0 90px;
+  }
+  .btnArea {
+    display: flex;
+    gap: 20px;
+  }
+  .btn {
+    width: 255px;
+    height: 70px;
+    gap: 10px;
+  }
+  .icon img {
+    width: 30px;
+  }
+  .arrow img {
+    width: 18px;
+  }
+  .btn h3 {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .counselingBanner h1 {
+    font-size: 52px;
+  }
+  .formContainer {
+    width: 60%;
+  }
+  .formContainer .formTxt h3 {
+    font-size: 28px;
+  }
+  .formContainer .formTxt input {
+    width: 720px;
+    height: 80px;
+    padding: 0 30px;
+  }
+  .formContainer .formTxt input::placeholder {
+    font-size: 28px;
+  }
+  .checkContainer {
+    display: flex;
+    gap: 50px;
+    width: 50%;
+    justify-content: flex-end;
+  }
+  .checkTxt {
+    font-size: 22px;
+    gap: 12px;
+  }
+  .checkTxt h3 {
+    font-size: 22px;
+  }
+  .checkContainer {
+    gap: 18px;
+    width: 57%;
+  }
+  .checkTxt img {
+    width: 24px;
+  }
+  .checkTxt .checkWrap {
+    gap: 10px;
+  }
+  .bannerTxt {
+    padding: 5% 0;
+  }
+  .bannerTxt .btn {
+    width: 480px;
+    height: 85px;
+  }
+  .bannerTxt .btn h3 {
+    font-size: 36px;
+  }
+  .banner-content {
+    bottom: 25%;
+    right: 3%;
+    gap: 10px;
+  }
+  .banner-content img {
+    width: 80%;
+  }
+  .banner-content img:last-child {
+    width: 40%;
+  }
+}
+@media (min-width: 1920px) {
+  body {
+    max-width: 1920px;
+  }
+  .subBanner {
+    height: 29vh;
+  }
+  .bannerInner {
+    padding: 0 95px;
+  }
+  .textArea h2 {
+    font-size: 45px;
+  }
+  .textArea h1 {
+    font-size: 77px;
+  }
+  .btnArea {
+    gap: 40px;
+  }
+  .btn {
+    width: 400px;
+    height: 110px;
+    gap: 10px;
+  }
+  .icon img {
+    width: 50px;
+  }
+  .arrow img {
+    width: 30px;
+  }
+  .btn h3 {
+    font-size: 50px;
+  }
+  .counselingBanner h1 {
+    font-size: 70px;
+  }
+  .formContainer {
+    width: 58%;
+  }
+  .formContainer .formTxt h3 {
+    font-size: 36px;
+  }
+  .formContainer .formTxt input {
+    width: 960px;
+    height: 107px;
+    padding: 30px 50px;
+  }
+  .formContainer .formTxt input::placeholder {
+    font-size: 36px;
+  }
+  .checkContainer {
+    display: flex;
+    gap: 50px;
+    width: 50%;
+    justify-content: flex-end;
+  }
+  .checkTxt {
+    font-size: 28px;
+    gap: 20px;
+  }
+  .checkTxt h3 {
+    font-size: 28px;
+  }
+  .checkContainer {
+    gap: 52px;
+    width: 57%;
+  }
+  .checkTxt img {
+    width: 35px;
+  }
+  .checkTxt .checkWrap {
+    gap: 10px;
+  }
+  .bannerTxt {
+    padding: 6% 0;
+  }
+  .bannerTxt .btn {
+    width: 641px;
+    height: 123px;
+  }
+  .bannerTxt .btn h3 {
+    font-size: 50px;
+  }
+  .banner-content {
+    bottom: 32%;
+    right: 4%;
+    gap: 10px;
+  }
+  .banner-content img {
+    width: 100%;
+  }
+  .banner-content img:last-child {
+    width: 50%;
+  }
+}
+@media (min-width: 2560px) {
+  body {
+    max-width: 2560px;
+  }
+  .subBanner {
+    height: 28vh;
+  }
+  .bannerInner {
+    padding: 0;
+  }
+  .textArea h2 {
+    font-size: 56px;
+  }
+  .textArea h1 {
+    font-size: 92px;
+  }
+  .btnArea {
+    gap: 40px;
+  }
+  .btn {
+    width: 410px;
+    height: 120px;
+    gap: 10px;
+  }
+  .icon img {
+    width: 48px;
+  }
+  .arrow img {
+    width: 34px;
+  }
+  .btn h3 {
+    font-size: 42px;
+    font-weight: bold;
+  }
+  .counselingBanner h1 {
+    font-size: 88px;
+  }
+  .formContainer {
+    width: 60%;
+    gap: 30px;
+  }
+  .formContainer .formTxt h3 {
+    font-size: 48px;
+  }
+  .formContainer .formTxt input {
+    width: 1300px;
+    height: 150px;
+    padding: 30px 50px;
+  }
+  .formContainer .formTxt input::placeholder {
+    font-size: 48px;
+  }
+  .checkTxt {
+    font-size: 36px;
+    gap: 20px;
+  }
+  .checkTxt h3 {
+    font-size: 36px;
+  }
+  .checkContainer {
+    gap: 90px;
+    width: 57%;
+  }
+  .checkTxt img {
+    width: 40px;
+  }
+  .checkTxt .checkWrap {
+    gap: 10px;
+  }
+  .bannerTxt {
+    padding: 6% 0;
+  }
+  .bannerTxt .btn {
+    width: 730px;
+    height: 150px;
+  }
+  .bannerTxt .btn h3 {
+    font-size: 60px;
+  }
+  .banner-content img {
+    width: 130%;
+  }
+  .banner-content img:last-child {
+    width: 65%;
+  }
+}
